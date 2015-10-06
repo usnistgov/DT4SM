@@ -1,0 +1,13 @@
+﻿<doc>
+  <brackets left="&lt;" right="&gt;" />
+
+  <style name="Text" fontStyle="Italic" />
+  <style name="Blue" color="Blue"/>
+  <style name="Red" color="Red" backColor="#f5f5e5" />
+  <style name="Green" color="Green" fontStyle="Bold"/>
+
+  <rule style="Green" >(#\d*)</rule>
+  <rule style="Blue">=(\w*)</rule>
+ <rule style="Text">'([^']*)'</rule>
+
+</doc>

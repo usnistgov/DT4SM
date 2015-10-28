@@ -8,7 +8,15 @@ We live in a new manufacturing era that has been called the Third Industrial Rev
 
 ## Repository Description
 
-This GitHub repository will hold the collection of tools developed by the project. The project is currently developing several tools for use in the project's research. Those tools will be published to this repository once they reach a baseline level of maturity. This section will be updated with the structure of the respository and description of each tool once the tools are committed to the repository.
+This GitHub repository is a collection of tools developed by the project. The project is currently developing several tools for use in the project's research. Those tools will be published to this repository once they reach a baseline level of maturity. Below is an overview of the tools available in this repository.
+
+```
++---DMC-Toolkit (Digital Manufacturing Certificate Toolkit)
+    +---Executables
+    +---Source
+    +---TestFiles
++---README.md (this documentation)
+```
 
 ## Contacts
 

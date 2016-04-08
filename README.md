@@ -20,7 +20,7 @@ This GitHub repository is a collection of tools developed by the project. The pr
 
 ## Contacts
 
-[Thomas Hedberg](http://www.nist.gov/el/msid/syseng/dtsm.cfm), tdh1@nist.gov, 301-975-4247
+[Thomas Hedberg](http://www.nist.gov/el/msid/syseng/thedberg.cfm), tdh1@nist.gov, 301-975-4247
 
 [Allison Barnard Feeney](http://www.nist.gov/el/msid/syseng/abfeeney.cfm), abf@nist.gov, 301-975-3181
 

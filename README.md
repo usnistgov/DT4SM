@@ -12,9 +12,9 @@ This GitHub repository is a collection of tools developed by the project. The pr
 
 ```
 +---DMC-Toolkit (Digital Manufacturing Certificate Toolkit)
-    +---Executables
-    +---Source
-    +---TestFiles
+¦   +---Executables
+¦   +---Source
+¦   +---TestFiles
 +---README.md (this documentation)
 ```
 

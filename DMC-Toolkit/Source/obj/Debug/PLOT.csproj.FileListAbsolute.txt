@@ -1,5 +1,0 @@
-c:\users\krimas\documents\visual studio 2015\Projects\PLOT\PLOT\bin\Debug\PLOT.dll
-c:\users\krimas\documents\visual studio 2015\Projects\PLOT\PLOT\bin\Debug\PLOT.pdb
-c:\users\krimas\documents\visual studio 2015\Projects\PLOT\PLOT\obj\Debug\PLOT.csprojResolveAssemblyReference.cache
-c:\users\krimas\documents\visual studio 2015\Projects\PLOT\PLOT\obj\Debug\PLOT.dll
-c:\users\krimas\documents\visual studio 2015\Projects\PLOT\PLOT\obj\Debug\PLOT.pdb

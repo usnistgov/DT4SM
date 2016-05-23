@@ -1,7 +1,0 @@
-C:\Users\krimas\Documents\Visual Studio 2015\Projects\PLOT\PLOT\bin\Debug\DMC.xml
-C:\Users\krimas\Documents\Visual Studio 2015\Projects\PLOT\PLOT\bin\Debug\DMC.dll
-C:\Users\krimas\Documents\Visual Studio 2015\Projects\PLOT\PLOT\bin\Debug\DMC.pdb
-C:\Users\krimas\Documents\Visual Studio 2015\Projects\PLOT\PLOT\bin\Debug\itextsharp.dll
-C:\Users\krimas\Documents\Visual Studio 2015\Projects\PLOT\PLOT\bin\Debug\itextsharp.xml
-C:\Users\krimas\Documents\Visual Studio 2015\Projects\PLOT\PLOT\obj\Debug\DMC.dll
-C:\Users\krimas\Documents\Visual Studio 2015\Projects\PLOT\PLOT\obj\Debug\DMC.pdb

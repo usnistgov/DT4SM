@@ -1,4 +1,0 @@
-c:\users\krimas\documents\visual studio 2015\Projects\PLOT\PLOT\bin\Release\PLOT.dll
-c:\users\krimas\documents\visual studio 2015\Projects\PLOT\PLOT\bin\Release\PLOT.pdb
-c:\users\krimas\documents\visual studio 2015\Projects\PLOT\PLOT\obj\Release\PLOT.dll
-c:\users\krimas\documents\visual studio 2015\Projects\PLOT\PLOT\obj\Release\PLOT.pdb

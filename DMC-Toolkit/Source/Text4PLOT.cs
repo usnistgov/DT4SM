@@ -44,7 +44,7 @@ namespace NIST.DMC
         /// <param name="x">Certificate used to sign the data</param>
         /// <param name="hashedData">Data digest to be signed</param>
         /// <returns>Returns a string containing a PKCS#7 signature</returns>
-        private  String EncodeCMS(X509Certificate2 x, byte[] hashedData)
+        protected  String EncodeCMS(X509Certificate2 x, byte[] hashedData)
         {
             //we are creating a CMS/PKCS#7 message
             Oid digestOid = new Oid("1.2.840.113549.1.7.2");

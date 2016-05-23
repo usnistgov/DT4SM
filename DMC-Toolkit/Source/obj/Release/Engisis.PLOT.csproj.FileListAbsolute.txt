@@ -1,7 +1,0 @@
-C:\Users\krimas\Documents\Visual Studio 2015\Projects\PLOT\PLOT\bin\Release\PLOT.dll
-C:\Users\krimas\Documents\Visual Studio 2015\Projects\PLOT\PLOT\bin\Release\PLOT.pdb
-C:\Users\krimas\Documents\Visual Studio 2015\Projects\PLOT\PLOT\bin\Release\itextsharp.dll
-C:\Users\krimas\Documents\Visual Studio 2015\Projects\PLOT\PLOT\bin\Release\itextsharp.xml
-C:\Users\krimas\Documents\Visual Studio 2015\Projects\PLOT\PLOT\obj\Release\Engisis.PLOT.csprojResolveAssemblyReference.cache
-C:\Users\krimas\Documents\Visual Studio 2015\Projects\PLOT\PLOT\obj\Release\PLOT.dll
-C:\Users\krimas\Documents\Visual Studio 2015\Projects\PLOT\PLOT\obj\Release\PLOT.pdb

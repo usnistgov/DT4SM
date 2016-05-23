@@ -150,7 +150,7 @@ We can final use the new EncodeAndSign method. The new method takes an additiona
 //we encode and sign the STEP file together with the block we created
 file.EncodeAndSign(x, pathToStepFile, b);
 //just like before we verify the signatures in the file
-t.VerifyFile(pathToStepFile, ref UsedCertificates)
+file.VerifyFile(pathToStepFile, ref UsedCertificates)
 ```
 
 

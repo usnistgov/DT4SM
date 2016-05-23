@@ -102,6 +102,58 @@ To extend the API and support new formats you need to write a new type of `Forma
 
 Before extending the API we recommend anyone to carefully read the following 2 articles on the MSDN: Using System.Security.Cryptography.Pkcs [8] and About System.Security.Cryptography.Pkcs [9].
 
+## Experimental support to STEP Traceability
+
+### Objective
+
+In the latest release of the DMC toolkit we implemented an experimental feature to embed traceability metadata within a STEP file. The metadata is signed together with the STEP data.  We extended the current ISO 10303-21 grammar to embed signature blocks. A block meets two requirements:
+-	A signature block enables a signer to vouch for other existing signatures 
+-	A signature block enables a signer to attach a set of metadata to document the signature
+
+### Example
+The following code snippet is an example of our extension in use. In this example a STEP file contains three signature blocks (1.1, 1.5, and 1.9) and is signed three times (1.3, 1.7, and 1.11). The first signature asserts that the current file results from a translation from December 2015 (1.2). The second signature (1.7) on the file certifies the authenticity of the STEP file itself and validates (1.6).  The third signature (1.11) signs the STEP file. We use the cross-signing references (1.11) to record that the signer acknowledges the first two signatures. 
+
+![example](https://github.com/usnistgov/DT4SM/blob/master/DMC-Toolkit/Figures/dmc_trace_doc.png)
+
+### Programmatically creating signature blocks
+
+```C#
+List<KeyValuePair<X509Certificate2, bool>> UsedCertificates = new List<KeyValuePair<X509Certificate2, bool>>();
+```
+
+First we need to initialize the parser for our extension. To do so we create a new `STEPTRACE4PLOT` object. The constructor takes 1 parameter, the location of the file. Using the `GetBlocks()` method on the parser we retrieve a signature block factory that will be used to manipulate existing and new signature blocks. 
+
+```C#
+//we initialize the parser
+STEPTRACE4PLOT file = new STEPTRACE4PLOT(pathToStepFile);
+//get a block factory to manipulate signature blocks
+STEPInterface.Elements elts = file.GetBlocks();
+```
+
+By calling the `CreateBlock()` method, the factory will create a new block and return its ID. It is important to store the ID, which will be later required anytime we need to manipulate the block. 
+
+```C#
+//create a block and store its ID
+var b = elts.CreateBlock();
+```
+
+We now use the `AddMetadata()` method from the factory to add a pair key/value to the block we just created. The method takes 3 parameters, the ID of the block, the key of the metadata, and its value. 
+
+```C#
+//use the block factory to add metadata to the block we just created
+elts.AddMetadata(b, "operation", "validation");
+```
+
+We can final use the new EncodeAndSign method. The new method takes an additional parameter, which is the ID of the block that needs to be signed together with the file.
+
+```C#
+//we encode and sign the STEP file together with the block we created
+file.EncodeAndSign(x, pathToStepFile, b);
+//just like before we verify the signatures in the file
+t.VerifyFile(pathToStepFile, ref UsedCertificates)
+```
+
+
 ### Requirements and Mono compatibility 
 The Mono project is an open source and cross-platform .NET framework that allows you to run your code of different platforms. At this time the Mono support of the System.Security namespace is incomplete, thus the DMC Toolkit can only be used in a Windows environment. To know more about the Mono implementation status you can refer to the Mono Class Status Pages [10].
 

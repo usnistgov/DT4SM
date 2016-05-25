@@ -107,7 +107,6 @@ namespace NIST.DMC
 
             SignedCms SignedCMS = new SignedCms(StepContent, true);
             List<KeyValuePair<X509Certificate2, bool>> UsedCertificates = new List<KeyValuePair<X509Certificate2, bool>>();
-            //B1.List<KeyValuePair<String,KeyValuePair<X509Certificate2, bool>>> UsedCertificates = new List<KeyValuePair<String, KeyValuePair<X509Certificate2, bool>>>();
 
             bool Validation = true;
 
@@ -122,19 +121,17 @@ namespace NIST.DMC
                     //after decoding the signed cms, we check the signature
                     SignedCMS.CheckSignature(true);
                     UsedCertificates.Add(new KeyValuePair<X509Certificate2, bool>(Enumerator.Current.Certificate, true));
-                    //B1.UsedCertificates.Add(new KeyValuePair<string, KeyValuePair<X509Certificate2, bool>>(FilePath,new KeyValuePair<X509Certificate2, bool>(enumerator.Current.Certificate, true)));
 
                 }
                 catch (System.Security.Cryptography.CryptographicException e)
                 {
                     //signature can't be verified
                     UsedCertificates.Add(new KeyValuePair<X509Certificate2, bool>(Enumerator.Current.Certificate, false));
-                    //B1.UsedCertificates.Add(new KeyValuePair<string, KeyValuePair<X509Certificate2, bool>>(FilePath, new KeyValuePair<X509Certificate2, bool>(enumerator.Current.Certificate, false)));
                     Validation = false;
                 }
 
             }
-            //B1.VerifiedCMS = MoveTo(UsedCertificates, VerifiedCMS);
+
             verifiedCMS = UsedCertificates;
             return Validation;
         }

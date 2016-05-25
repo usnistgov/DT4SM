@@ -1,3 +1,20 @@
+**Table of Contents**  
+
+- [Digital Manufacturing Certificate (DMC) Toolkit](#digital-manufacturing-certificate-dmc-toolkit)
+	- [What is the NIST DMC Toolkit](#what-is-the-nist-dmc-toolkit)
+	- [Introduction to digital signature](#introduction-to-digital-signature)
+	- [Formats supported](#formats-supported)
+	- [Developer’s information](#developers-information)
+		- [How to sign a file](#how-to-sign-a-file)
+		- [How to validate a file](#how-to-validate-a-file)
+		- [How to support new data format](#how-to-support-new-data-format)
+	- [Experimental support to STEP Traceability](#experimental-support-to-step-traceability)
+		- [Objective](#objective)
+		- [Example](#example)
+		- [Programmatically creating signature blocks](#programmatically-creating-signature-blocks)
+		- [Requirements and Mono compatibility](#requirements-and-mono-compatibility)
+	- [References](#references)
+
 # Digital Manufacturing Certificate (DMC) Toolkit
 The information below provides a basic level of documentation for the DMC Toolkit. For support or more information, please contact Thomas Hedberg (thomas.hedberg@nist.gov).
 

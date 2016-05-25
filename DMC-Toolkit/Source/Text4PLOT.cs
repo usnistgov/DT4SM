@@ -128,7 +128,7 @@ namespace NIST.DMC
                 catch (System.Security.Cryptography.CryptographicException e)
                 {
                     //signature can't be verified
-                    UsedCertificates.Add(new KeyValuePair<X509Certificate2, bool>(Enumerator.Current.Certificate, true));
+                    UsedCertificates.Add(new KeyValuePair<X509Certificate2, bool>(Enumerator.Current.Certificate, false));
                     //B1.UsedCertificates.Add(new KeyValuePair<string, KeyValuePair<X509Certificate2, bool>>(FilePath, new KeyValuePair<X509Certificate2, bool>(enumerator.Current.Certificate, false)));
                     Validation = false;
                 }

@@ -171,7 +171,7 @@ file.VerifyFile(pathToStepFile, ref UsedCertificates)
 ```
 
 
-### Requirements and Mono compatibility 
+## Requirements and Mono compatibility 
 The Mono project is an open source and cross-platform .NET framework that allows you to run your code of different platforms. At this time the Mono support of the System.Security namespace is incomplete, thus the DMC Toolkit can only be used in a Windows environment. To know more about the Mono implementation status you can refer to the Mono Class Status Pages [10].
 
 ## References

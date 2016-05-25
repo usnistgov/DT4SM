@@ -12,7 +12,7 @@
 		- [Objective](#objective)
 		- [Example](#example)
 		- [Programmatically creating signature blocks](#programmatically-creating-signature-blocks)
-		- [Requirements and Mono compatibility](#requirements-and-mono-compatibility)
+	- [Requirements and Mono compatibility](#requirements-and-mono-compatibility)
 	- [References](#references)
 
 # Digital Manufacturing Certificate (DMC) Toolkit

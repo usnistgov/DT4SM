@@ -11341,7 +11341,7 @@
         </member>
         <member name="M:iTextSharp.text.pdf.ColumnText.Go(System.Boolean)">
             Outputs the lines to the document. The output can be simulated.
-            @param simulate <CODE>true</CODE> to simulate the writting to the document
+            @param simulate <CODE>true</CODE> to simulate the writing to the document
             @return returns the result of the operation. It can be <CODE>NO_MORE_TEXT</CODE>
             and/or <CODE>NO_MORE_COLUMN</CODE>
             @throws DocumentException on error
@@ -27806,7 +27806,7 @@
         </member>
         <member name="M:iTextSharp.text.pdf.VerticalText.Go(System.Boolean)">
             Outputs the lines to the document. The output can be simulated.
-            @param simulate <CODE>true</CODE> to simulate the writting to the document
+            @param simulate <CODE>true</CODE> to simulate the writing to the document
             @return returns the result of the operation. It can be <CODE>NO_MORE_TEXT</CODE>
             and/or <CODE>NO_MORE_COLUMN</CODE>
             @throws DocumentException on error

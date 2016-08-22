@@ -81,6 +81,18 @@ namespace NIST.DMC
             LocalStore.Close();
         }
 
+        /// <summary>
+        /// Adds a protected certificate in the user's local store
+        /// </summary>
+        /// <param name="filePath">Path to the file that contains the certificate</param>
+        /// <param name="password">Password to access the certificate data</param>
+        public static void AddProtectedCertificate(string filePath, string password)
+        {
+            X509Certificate2 x = new X509Certificate2(filePath, password);
+            LocalStore.Open(OpenFlags.ReadWrite);
+            LocalStore.Add(x);
+            LocalStore.Close();
+        }
 
     }
 }

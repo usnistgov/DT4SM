@@ -15,6 +15,7 @@ This GitHub repository is a collection of tools developed by the project. The pr
 ¦   +---Executables
 ¦   +---Source
 ¦   +---TestFiles
++---MBE-Capabilities-Assessment (Model-Based Enterprise (MBE) Capabilities Assessment)
 +---README.md (this documentation)
 ```
 

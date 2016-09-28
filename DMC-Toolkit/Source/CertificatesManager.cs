@@ -88,7 +88,7 @@ namespace NIST.DMC
         /// <param name="password">Password to access the certificate data</param>
         public static void AddProtectedCertificate(string filePath, string password)
         {
-            X509Certificate2 x = new X509Certificate2(filePath, password);
+            X509Certificate2 x = new X509Certificate2(filePath, password, X509KeyStorageFlags.UserKeySet);
             LocalStore.Open(OpenFlags.ReadWrite);
             LocalStore.Add(x);
             LocalStore.Close();
